@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forgotpass"
+    android:orientation="vertical"
+    tools:context=".UploadMCQActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <com.example.gyanlike.customs.CustomHeader
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/customHeader" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtchtitle"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="-10dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter question with options and select correct answer*"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtAque"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:imeOptions="actionNext"
+            android:hint="Enter Question with Question no."
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Correct Answer"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/optionContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Aoption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:layout_margin="5dp"
+                    android:text="A) "
+                    android:buttonTint="#000000"
+                    android:buttonTintMode="multiply"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/Boption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:layout_margin="5dp"
+                    android:text="B) "
+                    android:buttonTint="#000000"
+                    android:buttonTintMode="multiply"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/Coption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:layout_margin="5dp"
+                    android:text="C) "
+                    android:buttonTint="#000000"
+                    android:buttonTintMode="multiply"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/Doption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:layout_margin="5dp"
+                    android:text="D) "
+                    android:buttonTint="#000000"
+                    android:buttonTintMode="multiply"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/answerContainer"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtAoption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:imeOptions="actionNext"
+                    android:hint="Option A"
+                    tools:ignore="NotSibling" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtBoption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:layout_margin="5dp"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/black"
+                    android:hint="Option B"
+                    tools:ignore="NotSibling" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtCoption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:layout_margin="5dp"
+                    android:imeOptions="actionNext"
+                    android:textColor="@color/black"
+                    android:hint="Option C"
+                    tools:ignore="NotSibling" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtDoption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAllCaps="false"
+                    android:layout_margin="5dp"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/black"
+                    android:hint="Option D"
+                    tools:ignore="NotSibling" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upload"
+            android:background="@drawable/btnshape"
+            android:text="Upload"
+            android:textSize="20sp"
+            android:paddingHorizontal="25dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

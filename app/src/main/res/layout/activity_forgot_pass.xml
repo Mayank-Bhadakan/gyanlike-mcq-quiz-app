@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/forgotpass"
+    tools:context=".ForgotPassActivity">
+
+<com.example.gyanlike.customs.CustomHeader
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/customHeader"
+    android:layout_marginTop="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="19.50dp">
+        
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTerms"
+            android:textStyle="bold"
+            android:singleLine="false"
+            android:layout_marginStart="18dp"
+            android:text="Please enter your registered email address to receive new password"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtFEmail"
+            android:layout_marginBottom="90dp"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:hint="Email*"
+            android:imeOptions="actionDone"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:maxLength="100" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSubmit"
+            android:layout_marginHorizontal="33dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:background="@drawable/btnshape"
+            android:textColor="@color/white" />
+        
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

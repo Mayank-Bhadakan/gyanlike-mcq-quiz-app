@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/headerView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="13dp"
+    android:paddingEnd="19dp">
+    
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/btnBack"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:src="@drawable/back_arrow" />
+    
+    <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/txtTitle"
+    android:textStyle="bold"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:layout_marginTop="13dp"
+    android:textSize="22sp"
+    android:paddingStart="6.50dp" />
+
+<!--    <androidx.appcompat.widget.AppCompatTextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/txtSubTitle"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_marginTop="13dp"-->
+<!--        android:textSize="22sp"-->
+<!--        android:paddingStart="6.50dp"-->
+<!--        tools:ignore="RtlSymmetry" />-->
+
+</androidx.appcompat.widget.LinearLayoutCompat>

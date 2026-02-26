@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GyanLike</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="standard">Standard :</string>
+    <string name="subject">Subject :</string>
+    <string name="chapter">Chapter :</string>
+</resources>
